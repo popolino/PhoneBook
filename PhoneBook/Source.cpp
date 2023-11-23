@@ -10,7 +10,6 @@ class Contact {
 public:
     Contact() : name(""), number(0) {}
     Contact(string name, int number) : name(name), number(number) {}
-
     void SetName(string name) {
         this->name = name;
     }
@@ -78,7 +77,6 @@ int main() {
         Contact("Mom", 3533),
         Contact("Dad", 5664),
     };
-
     while (true) {
         cout << "Select action: " << endl
             << "1 - Create new contact" << endl
@@ -103,6 +101,5 @@ int main() {
         }
         cin.get();
     }
-
     return 0;
 }
